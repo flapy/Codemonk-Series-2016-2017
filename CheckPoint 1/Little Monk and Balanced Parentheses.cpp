@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main()
-{
-	stack <int> s;
+{	
+    stack <int> s;
     int n;
     cin >> n;
     int cnt = 0;
@@ -21,9 +21,9 @@ int main()
     		if (abs(a[i]) == a[tp])
     		{
     			if (!s.empty())
-					ans = max(ans,i - s.top());
-				else
-					s.push(i);
+				ans = max(ans,i - s.top());
+			else
+				s.push(i);
     		}
     		else
     			s.push(i);
